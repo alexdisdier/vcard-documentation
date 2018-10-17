@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta name="viewport" content="width=device-width, minimum-scale=1.0, initial-scale=1.0">
+  <meta charset="utf-8">
+  <meta name="description" content="This website is part of a freecodecamp responsive design certification. It will be a technical documentation page for my digital vcard website.">
+  <meta name="author" content="Alex Disdier">
+
+  <!-- favicon -->
+  <link rel="icon" type="image/png" href="images/default-favicon.png" />
+
+  <title>vcard end user documentation</title>
+  <link rel="stylesheet" href="styles/normalize.min.css" />
+  <link rel="stylesheet" href="styles/bootstrap.min.css" />
+  <link rel="stylesheet" href="styles/main.min.css" />
+</head>
+
+<body>
+
+  <div class="row">
+
+    <div class="col-sm-12 col-md-4 col-lg-3">
+      <header class="container navbar-container">
+        <nav id="navbar">
+          <header class="header-mobile" onclick="toggleDropdown()"><a href="#">vcard documentation</a><span id="js-menu-icon" class="menu-toggle hide"></span></header>
+          <div id="js-dropdown-content">
+            <a href="#Introduction" class="nav-link js-active" data-scroll>Introduction</a>
+            <a href="#Before_installation" class="nav-link" data-scroll>Before Installation</a>
+            <a href="#Installation" class="nav-link" data-scroll>Installation</a>
+            <a href="#Tips" class="nav-link" data-scroll>Tips</a>
+            <a href="#Support" class="nav-link" data-scroll>Support</a>
+            <a href="#References" class="nav-link" data-scroll>References</a>
+          </div>
+        </nav>
+      </header>
+    </div>
+
+    <div class="col-sm-12 col-md-8 col-lg-9">
+      <main id="main-doc" class="container">
+        <section id="Introduction" class="main-section">
+          <header>Introduction</header>
+          <p>Vcard is a personal digital business card template.</p>
+          <ul>This template is:
+            <li>responsive (it will correctly resize depending on the screen you use; i.e: smartphone, tablet, desktop)</li>
+            <li>You can customize the content (text, photo, favicon*, Metadata*)</li>
+            <li>You can edit your content directly on the site using a username and password when you first register.</li>
+          </ul>
+          <p>See a live version running this template - <a href="https://www.alexdisdier.fr/" target="_blank"></a> </p>
+        </section><!-- #Introduction -->
+
+        <section id="Before_installation" class="main-section">
+          <header>Before Installation</header>
+          <p>Here are a few things to be aware of before jumping into the installation.</p>
+          <p>Just like any other CMS such as wordpress, the vcard relies on creating a database where it stocks your content (text, photo, etc...). Most web hosting offer a database easy installation wizard that you can follow.</p>
+          <ul>
+            You will also need to understand the directory of your web hosting and where you should upload the vcard files. Two methods can be used:
+            <li>using your web hosting cPanel file manager*</li>
+            <li>using a FTP client*</li>
+          </ul>
+        </section><!-- #Before_installation -->
+
+        <section id="Installation" class="main-section">
+          <header>Installation</header>
+          <p>Go to the <a href="https://github.com/alexdisdier/vcard/tree/master/dist" target="_blank">following url</a>and download the following files onto your computer:</p>
+          <code> - install-vcard.php
+            - vcard_archive.zip
+          </code>
+          <p>Just like any other CMS such as wordpress, the vcard relies on creating a database where it stocks your content (text, photo, etc...). Most web hosting offer a database easy installation wizard that you can follow.</p>
+          <p>Using either a CPanel or a FTP client, upload those 2 files in the root directory of your future website (usually holds the domain name you chose).</p>
+          <p>In your navigation bar, type the url of your root directory followed by "install-vcard.php". It should be something like</p>
+          <code>https://yourdomain.com/install-vcard.php</code>
+          <p>Follow the on screen instructions.</p>
+          <p>Once the vcard is installed correctly, go to the main page where you'll see shakespeare and click on "Made with a" link.</p>
+          <p>You can now log in. Click on the smily face in the footer. Edit your content.</p>
+        </section><!-- #Before_installation -->
+
+        <section id="Tips" class="main-section">
+          <header>Tips</header>
+          <h3>Photos</h3>
+          <p>It is important to use the right size for your photos. Your photos do not need to be gigantic in size (mb) to be picture clear on a web browser. More often than not, your photos for the web will not be printed.</p>
+          <p>Here are some useful links to learn in more depth about the right size for your photo.</p>
+          <code>https://www.1dogwoof.com/10-tips-best-image-size-blog/
+            https://www.calliaweb.co.uk/image-size-aspect-ratio-web-design/</code>
+
+          <h3>Content</h3>
+          <p>Try to keep your content short to engage your visitor. Long everlasting text will discourage the visitor.</p>
+
+          <h3>Password</h3>
+          <p>even though the vcard is secure, your password is only as secure as the one you choose. Try using a password manager. It will help you to create powerful passwords. Don't worry, if you can't remember your password one day, just use the
+            forgot my password on the login page.</p>
+
+        </section><!-- #Tips -->
+
+        <section id="Support" class="main-section">
+          <header>Support</header>
+          <p>If you encounter any problems with this vcard, feel free to contact me at <a href="mailto:alex@onze.digital?Subject=Question%20about%20vcard" target="_top">alex@onze.digital</a></p>
+          <p>If you feel comfortable looking under the hood, then visit <a href="https://github.com/alexdisdier/vcard" target="_blank">the follow page</a>.</p>
+
+        </section><!-- #Support -->
+
+        <section id="References" class="main-section">
+          <header>References</header>
+          <ol>
+            <li>
+              <cite><a href="https://www.dictionary.com/browse/favicon">Favicon</a>. a 16 x 16-pixel icon associated with a particular website, usually displayed before the URL in a web browser. (wikipedia)</cite>
+            </li>
+            <li>
+              <cite><a href="https://www.w3schools.com/tags/tag_meta.asp">Metadata</a>. Meta elements are typically used to specify page description, keywords, author of the document, last modified, and other metadata.. (w3schools)</cite>
+            </li>
+            <li>
+              <cite><a href="https://en.wikipedia.org/wiki/File_manager">Cpanel</a>. A Cpanel file manager or file browser is a computer program that provides a user interface to manage files and folders. The most common operations performed on
+                files
+                or
+                groups of files include creating, opening (e.g. viewing, playing, editing or printing), renaming, moving or copying, deleting and searching for files, as well as modifying file attributes, properties and file permissions..
+                (wikipedia)</cite>
+            </li>
+            <li>
+              <cite><a href="https://en.wikipedia.org/wiki/File_Transfer_Protocol">FTP client</a>. The File Transfer Protocol (FTP) is a standard network protocol used for the transfer of computer files between a client and server on a computer
+                network.
+                (wikipedia)</cite>
+            </li>
+          </ol>
+
+        </section><!-- #Support -->
+
+      </main>
+    </div>
+  </div>
+
+  <footer>
+
+  </footer>
+  <script src="scripts/main.min.js"></script>
+  <script src="scripts/smooth-scroll.min.js"></script>
+  <script>
+    var scroll = new SmoothScroll('a[href*="#"]');
+  </script>
+
+  <!-- freecodecamp testable projects -->
+  <!-- <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js">
+  </script> -->
+</body>
+
+</html>

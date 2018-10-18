@@ -5,11 +5,11 @@
 /*--------------------------------------------------------------
  Initiate smoothscroll
 --------------------------------------------------------------*/
-// var scroll = new SmoothScroll('a[href*="#"]');
-
+var scroll = new SmoothScroll('a[href*="#"]');
 /*--------------------------------------------------------------
  toggleDropdown Mobile and <a> active
 --------------------------------------------------------------*/
+
 var toggleContent = document.getElementById('js-dropdown-content');
 var toggleLinks = document.getElementsByClassName("nav-link");
 var menuIcon = document.getElementById('js-menu-icon'); // The burger button triggers the toggle open

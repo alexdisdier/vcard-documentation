@@ -26,6 +26,7 @@ a:hover {
 }
 
 .row {
+  margin: 0 auto;
   padding-top: 24px;
   padding-bottom: 60px;
 }
@@ -55,7 +56,7 @@ nav a {
 }
 
 nav a:hover {
-  color: rgba(0, 0, 0, 0.4);
+  color: #fb8332;
 }
 
 .header-mobile {
@@ -132,10 +133,6 @@ button {
   outline: none;
 }
 
-.js-active {
-  color: #fa6400;
-}
-
 #js-dropdown-content {
   display: none;
 }
@@ -153,15 +150,18 @@ main header {
 }
 
 .main-section:nth-child(n+2) header {
-  margin-top: 40px;
+  margin-top: 56px;
 }
 
 .main-section h3 {
-  font-size: 24px;
+  padding-top: 16px;
+  font-size: 18px;
 }
 
 code {
   display: block;
+  margin-bottom: 16px;
+  line-height: 2;
 }
 
 @media (min-width: 768px) {
@@ -208,7 +208,9 @@ code {
   }
 
   .main-section header {
+    padding-bottom: 16px;
     font-size: 64px;
+    line-height: 1;
   }
 
   main {
@@ -216,6 +218,6 @@ code {
   }
 
   .main-section h3 {
-    font-size: 40px;
+    font-size: 36px;
   }
 }

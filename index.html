@@ -10,7 +10,7 @@
   <!-- favicon -->
   <link rel="icon" type="image/png" href="images/default-favicon.png" />
 
-  <title>vcard end user documentation</title>
+  <title>vcard documentation</title>
   <link rel="stylesheet" href="styles/normalize.min.css" />
   <link rel="stylesheet" href="styles/bootstrap.min.css" />
   <link rel="stylesheet" href="styles/main.min.css" />
@@ -25,7 +25,7 @@
         <nav id="navbar">
           <header class="header-mobile" onclick="toggleDropdown()"><a href="#">vcard documentation</a><span id="js-menu-icon" class="menu-toggle hide"></span></header>
           <div id="js-dropdown-content">
-            <a href="#Introduction" class="nav-link js-active" data-scroll>Introduction</a>
+            <a href="#Introduction" class="nav-link" data-scroll>Introduction</a>
             <a href="#Before_installation" class="nav-link" data-scroll>Before Installation</a>
             <a href="#Installation" class="nav-link" data-scroll>Installation</a>
             <a href="#Tips" class="nav-link" data-scroll>Tips</a>
@@ -43,29 +43,32 @@
           <p>Vcard is a personal digital business card template.</p>
           <ul>This template is:
             <li>responsive (it will correctly resize depending on the screen you use; i.e: smartphone, tablet, desktop)</li>
-            <li>You can customize the content (text, photo, favicon*, Metadata*)</li>
+            <li>You can customize the content (text, photo, favicon<a href="#favicon-ref"> *</a>, Metadata<a href="#metadata-ref"> *</a>)</li>
             <li>You can edit your content directly on the site using a username and password when you first register.</li>
           </ul>
-          <p>See a live version running this template - <a href="https://www.alexdisdier.fr/" target="_blank"></a> </p>
+          <p>See a <a href="https://www.alexdisdier.fr/" target="_blank">live version running this template</a></p>
         </section><!-- #Introduction -->
 
         <section id="Before_installation" class="main-section">
           <header>Before Installation</header>
           <p>Here are a few things to be aware of before jumping into the installation.</p>
           <p>Just like any other CMS such as wordpress, the vcard relies on creating a database where it stocks your content (text, photo, etc...). Most web hosting offer a database easy installation wizard that you can follow.</p>
+          <span>You will also need to understand the directory of your web hosting and where you should upload the vcard files. Two methods can be used:</span>
           <ul>
-            You will also need to understand the directory of your web hosting and where you should upload the vcard files. Two methods can be used:
-            <li>using your web hosting cPanel file manager*</li>
-            <li>using a FTP client*</li>
+            <li>using your web hosting cPanel file manager<a href="#cpanel-ref"> *</a></li>
+            <li>using a FTP client<a href="#ftp-ref"> *</a></li>
           </ul>
         </section><!-- #Before_installation -->
 
         <section id="Installation" class="main-section">
           <header>Installation</header>
           <p>Go to the <a href="https://github.com/alexdisdier/vcard/tree/master/dist" target="_blank">following url</a> and download the following files onto your computer:</p>
-          <code> - install-vcard.php
-            - vcard_archive.zip
+          <code>
+            install-vcard.php<br />
+            vcard_archive.zip
           </code>
+          <code hidden></code>
+          <code hidden></code>
           <p>Just like any other CMS such as wordpress, the vcard relies on creating a database where it stocks your content (text, photo, etc...). Most web hosting offer a database easy installation wizard that you can follow.</p>
           <p>Using either a CPanel or a FTP client, upload those 2 files in the root directory of your future website (usually holds the domain name you chose).</p>
           <p>In your navigation bar, type the url of your root directory followed by "install-vcard.php". It should be something like</p>
@@ -95,7 +98,7 @@
         <section id="Support" class="main-section">
           <header>Support</header>
           <p>If you encounter any problems with this vcard, feel free to contact me at <a href="mailto:alex@onze.digital?Subject=Question%20about%20vcard" target="_top">alex@onze.digital</a></p>
-          <p>If you feel comfortable looking under the hood, then visit <a href="https://github.com/alexdisdier/vcard" target="_blank">the follow page</a>.</p>
+          <p>If you feel comfortable looking under the hood, then visit <a href="https://github.com/alexdisdier/vcard" target="_blank">the following page</a>.</p>
 
         </section><!-- #Support -->
 
@@ -103,20 +106,25 @@
           <header>References</header>
           <ol>
             <li>
-              <cite><a href="https://www.dictionary.com/browse/favicon">Favicon</a>. a 16 x 16-pixel icon associated with a particular website, usually displayed before the URL in a web browser. (wikipedia)</cite>
+              <cite><a id="favicon-ref" href="https://www.dictionary.com/browse/favicon" target="_blank">Favicon</a>. a 16 x 16-pixel icon associated with a particular website, usually displayed before the URL in a web browser. (wikipedia)</cite>
             </li>
             <li>
-              <cite><a href="https://www.w3schools.com/tags/tag_meta.asp">Metadata</a>. Meta elements are typically used to specify page description, keywords, author of the document, last modified, and other metadata.. (w3schools)</cite>
+              <cite><a id="metadata-ref" href="https://www.w3schools.com/tags/tag_meta.asp" target="_blank">Metadata</a>. Meta elements are typically used to specify page description, keywords, author of the document, last modified, and other
+                metadata.. (w3schools)</cite>
             </li>
             <li>
-              <cite><a href="https://en.wikipedia.org/wiki/File_manager">Cpanel</a>. A Cpanel file manager or file browser is a computer program that provides a user interface to manage files and folders. The most common operations performed on
+              <cite><a id="cpanel-ref" href="https://en.wikipedia.org/wiki/File_manager" target="_blank">Cpanel</a>. A Cpanel file manager or file browser is a computer program that provides a user interface to manage files and folders. The most
+                common operations
+                performed on
                 files
                 or
                 groups of files include creating, opening (e.g. viewing, playing, editing or printing), renaming, moving or copying, deleting and searching for files, as well as modifying file attributes, properties and file permissions..
                 (wikipedia)</cite>
             </li>
             <li>
-              <cite><a href="https://en.wikipedia.org/wiki/File_Transfer_Protocol">FTP client</a>. The File Transfer Protocol (FTP) is a standard network protocol used for the transfer of computer files between a client and server on a computer
+              <cite><a id="ftp-ref" href="https://en.wikipedia.org/wiki/File_Transfer_Protocol" target="_blank">FTP client</a>. The File Transfer Protocol (FTP) is a standard network protocol used for the transfer of computer files between a client
+                and server on a
+                computer
                 network.
                 (wikipedia)</cite>
             </li>
@@ -131,15 +139,12 @@
   <footer>
 
   </footer>
-  <script src="scripts/main.min.js"></script>
   <script src="scripts/smooth-scroll.min.js"></script>
-  <script>
-    var scroll = new SmoothScroll('a[href*="#"]');
-  </script>
+  <script src="scripts/main.min.js"></script>
 
   <!-- freecodecamp testable projects -->
-  <!-- <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js">
-  </script> -->
+  <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js">
+  </script>
 </body>
 
 </html>
